@@ -15,7 +15,8 @@ public class BankAplication {
 
     @FXML
     protected void addBalance(){
-        BankAccount bankAccount = new BankAccount(textFieldBalance.getText(), Login.getUsers(),12313132);
+        BankAccount bankAccount = new BankAccount(textFieldBalance.getText(),12313132);
+        Users.bankAccountslist.add(bankAccount);
 
     }
 }

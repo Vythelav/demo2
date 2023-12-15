@@ -12,9 +12,8 @@ public class BankAccount {
     public BankAccount(){
 
     }
-    public BankAccount(String balance, List<Users> users , int numberAccount) {
+    public BankAccount(String balance , int numberAccount) {
         this.Balance = balance;
-        this.users = users;
         this.numberAccount = numberAccount;
     }
 

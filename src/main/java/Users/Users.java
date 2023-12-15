@@ -8,17 +8,16 @@ public class Users {
     String name;
     String surname;
     String password;
-    List<BankAccount> bankAccountslist;
+    public static List<BankAccount> bankAccountslist;
 
     public Users() {
 
     }
 
-    public Users(String name, String surname, String password, List<BankAccount> bankAccountslist) {
+    public Users(String name, String surname, String password) {
         this.name = name;
         this.surname = surname;
         this.password = password;
-        this.bankAccountslist = bankAccountslist;
     }
 
     public String getPassword() {
