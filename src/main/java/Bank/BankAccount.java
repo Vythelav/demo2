@@ -5,19 +5,19 @@ import Users.Users;
 import java.util.List;
 
 public class BankAccount {
-    private int numberAccount;
+    private String numberAccount;
     private String Balance;
-    public List<Users> users;
+
 
     public BankAccount(){
 
     }
-    public BankAccount(String balance , int numberAccount) {
+    public BankAccount(String balance , String numberAccount) {
         this.Balance = balance;
         this.numberAccount = numberAccount;
     }
 
-    public int getNumberAccount() {
+    public String getNumberAccount() {
         return numberAccount;
     }
 

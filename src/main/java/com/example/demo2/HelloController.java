@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -32,17 +33,16 @@ public class HelloController {
     }
     @FXML
     protected void loginButtonClick() throws IOException {
-        Login logins = new Login();
         String login = textField.getText();
         String password = passwordField.getText();
         try {
-            for (Users user: logins.users){
-
-                if (user.getName().equals(login) && user.getPassword().equals(password)){
-                    entry();
-                    System.out.println("Вход выполнен");
+            for (Users user: Login.users) {
+                    if (user.getName().equals(login) && user.getPassword().equals(password)) {
+                        entry();
+                        System.out.println("Вход выполнен");
+                    }
                 }
-            }
+
         }catch (Exception e){
             System.out.println("Ошибка" + e.getMessage());
         }

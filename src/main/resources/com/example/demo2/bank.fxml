@@ -2,10 +2,21 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bank.BankAplication">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.BankAplication">
 
-      <TextField fx:id="textFieldBalancetextFieldBalance" layoutX="214.0" layoutY="121.0" />
-      <Button fx:id="buttonBalance" layoutX="274.0" layoutY="226.0" mnemonicParsing="false" onAction="#addBalance" text="Сохранить" />
+      <TextField fx:id="textFieldBalance" layoutX="214.0" layoutY="121.0" />
+      <Button fx:id="buttonBalance" layoutX="252.0" layoutY="239.0" mnemonicParsing="false" onAction="#addBalance" text="Сохранить" />
+   <Label layoutX="207.0" layoutY="78.0" text="Введите сумму">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+   <TextField fx:id="textFieldNumberAccount" layoutX="215.0" layoutY="200.0" />
+   <Label layoutX="155.0" layoutY="153.0" text="Введите номер аккаунта">
+      <font>
+         <Font size="24.0" />
+      </font></Label>
 
 </AnchorPane>
