@@ -1,9 +1,10 @@
 package com.example.demo2;
 
+
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
-import java.util.stream.Stream;
+
 
 public class Statistics {
     @FXML
@@ -11,8 +12,8 @@ public class Statistics {
     @FXML
     TextField textFieldRasxod;
 
-    private double totalDoxod = 0;
-    private double totalRasxod = 0;
+    private  double totalDoxod = 0;
+    private  double totalRasxod = 0;
 
     @FXML
     protected void clickButtonAdd() {
@@ -26,5 +27,9 @@ public class Statistics {
         }catch (NumberFormatException e){
             System.out.println("Введите числовое значение");
         }
+
     }
-}
+
+
+    }
+

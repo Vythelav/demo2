@@ -10,7 +10,8 @@ public class Login {
     public static List<Users> users = new ArrayList<>();
 
    static  {
-    Users userOne = new Users("Ivan","Ivanov","1234", Users.bankAccountslist);
+       Statistics statistics = new Statistics();
+    Users userOne = new Users("Ivan","Ivanov","1234", Users.bankAccountslist );
     users.add(userOne);
     }
     public static List<Users> getUsers() {

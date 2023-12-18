@@ -9,6 +9,8 @@ public class Users {
     String name;
     String surname;
     String password;
+    String doxod;
+    String rasxod;
     public static List<BankAccount> bankAccountslist = new ArrayList<>();
 
     public Users() {
