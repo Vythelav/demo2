@@ -55,5 +55,6 @@ public class HelloController {
         stage.setTitle("Деньгииии");
         stage.setScene(scene);
         stage.show();
+
     }
 }
