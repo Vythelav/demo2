@@ -3,13 +3,17 @@
 <?import javafx.scene.chart.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.demo2.StatisticalFinanceConroller">
+<VBox alignment="CENTER" spacing="10" style="-fx-border-color: black; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.StatisticalFinanceConroller">
     <padding>
 
     </padding>
-    <Label text="Статистика доходов и расходов" />
-    <BarChart fx:id="barChart" prefHeight="300" prefWidth="400">
+    <Label text="Статистика доходов и расходов">
+      <font>
+         <Font size="21.0" />
+      </font></Label>
+    <BarChart fx:id="barChart" prefHeight="300" prefWidth="400" style="-fx-border-color: black;">
         <xAxis>
             <CategoryAxis />
         </xAxis>
@@ -18,11 +22,17 @@
         </yAxis>
     </BarChart>
     <HBox alignment="CENTER" spacing="5">
-        <TextField fx:id="itemName" promptText="Имя" />
-        <TextField fx:id="itemAmount" promptText="Сумма" />
-        <Button onAction="#addItemButtonAction" text="Добавить доход" />
-        <Button onAction="#addExpenseButtonAction" text="Добавить расход" />
+        <TextField fx:id="itemName" promptText="Имя" style="-fx-border-color: black;" />
+        <TextField fx:id="itemAmount" promptText="Сумма" style="-fx-border-color: black;" />
+        <Button onAction="#addItemButtonAction" style="-fx-background-color: black; -fx-background-radius: 50;" text="Добавить доход" textFill="WHITE" />
+        <Button onAction="#addExpenseButtonAction" style="-fx-background-color: black; -fx-background-radius: 50;" text="Добавить расход" textFill="WHITE" />
     </HBox>
-    <Button  onAction="#removeItemButtonAction" text="Удалить" />
-    <Button onAction="#updateButtonAction" text="Обновить" />
+    <Button onAction="#removeItemButtonAction" style="-fx-background-color: black; -fx-background-radius: 50;" text="Удалить" textFill="WHITE">
+      <font>
+         <Font size="15.0" />
+      </font></Button>
+    <Button onAction="#updateButtonAction" style="-fx-background-color: black; -fx-background-radius: 50;" text="Обновить" textFill="#fcfcfc">
+      <font>
+         <Font size="15.0" />
+      </font></Button>
 </VBox>

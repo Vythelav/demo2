@@ -29,7 +29,7 @@ public class PageOne implements Initializable {
     protected void clickButtonNewChet() throws IOException {
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("bank.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 480, 440);
+        Scene scene = new Scene(fxmlLoader.load(), 580, 440);
         stage.setTitle("Вход");
         stage.setScene(scene);
         stage.show();
@@ -38,7 +38,7 @@ public class PageOne implements Initializable {
     protected  void clikButtonNewDoxod() throws IOException {
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("statistics.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 480, 440);
+        Scene scene = new Scene(fxmlLoader.load(), 580, 440);
         stage.setTitle("Вход");
         stage.setScene(scene);
         stage.show();
@@ -48,7 +48,7 @@ public class PageOne implements Initializable {
     protected  void clikButtonNewStatistic() throws IOException {
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("grafic.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 480, 440);
+        Scene scene = new Scene(fxmlLoader.load(), 580, 440);
         stage.setTitle("Вход");
         stage.setScene(scene);
         stage.show();
